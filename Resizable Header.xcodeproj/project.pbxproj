@@ -11,6 +11,9 @@
 		D93F5C842A02E828008EF531 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F5C832A02E828008EF531 /* ContentView.swift */; };
 		D93F5C862A02E82A008EF531 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D93F5C852A02E82A008EF531 /* Assets.xcassets */; };
 		D93F5C892A02E82A008EF531 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D93F5C882A02E82A008EF531 /* Preview Assets.xcassets */; };
+		D93F5C902A02E85D008EF531 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F5C8F2A02E85D008EF531 /* HomeView.swift */; };
+		D93F5CC12A06659D008EF531 /* SwiftUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = D93F5CC02A06659D008EF531 /* SwiftUIKit */; };
+		D93F5CC32A06A029008EF531 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F5CC22A06A029008EF531 /* HomeHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,8 @@
 		D93F5C832A02E828008EF531 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D93F5C852A02E82A008EF531 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D93F5C882A02E82A008EF531 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D93F5C8F2A02E85D008EF531 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D93F5CC22A06A029008EF531 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D93F5CC12A06659D008EF531 /* SwiftUIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +59,8 @@
 			children = (
 				D93F5C812A02E828008EF531 /* Resizable_HeaderApp.swift */,
 				D93F5C832A02E828008EF531 /* ContentView.swift */,
+				D93F5C8F2A02E85D008EF531 /* HomeView.swift */,
+				D93F5CC22A06A029008EF531 /* HomeHeaderView.swift */,
 				D93F5C852A02E82A008EF531 /* Assets.xcassets */,
 				D93F5C872A02E82A008EF531 /* Preview Content */,
 			);
@@ -83,6 +91,9 @@
 			dependencies = (
 			);
 			name = "Resizable Header";
+			packageProductDependencies = (
+				D93F5CC02A06659D008EF531 /* SwiftUIKit */,
+			);
 			productName = "Resizable Header";
 			productReference = D93F5C7E2A02E828008EF531 /* Resizable Header.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = D93F5C752A02E828008EF531;
+			packageReferences = (
+				D93F5CBF2A06659D008EF531 /* XCRemoteSwiftPackageReference "SwiftUIKit" */,
+			);
 			productRefGroup = D93F5C7F2A02E828008EF531 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D93F5CC32A06A029008EF531 /* HomeHeaderView.swift in Sources */,
+				D93F5C902A02E85D008EF531 /* HomeView.swift in Sources */,
 				D93F5C842A02E828008EF531 /* ContentView.swift in Sources */,
 				D93F5C822A02E828008EF531 /* Resizable_HeaderApp.swift in Sources */,
 			);
@@ -195,7 +211,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +265,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -275,6 +291,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +321,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +357,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D93F5CBF2A06659D008EF531 /* XCRemoteSwiftPackageReference "SwiftUIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Mohamed-Shimy/SwiftUIKit.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D93F5CC02A06659D008EF531 /* SwiftUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D93F5CBF2A06659D008EF531 /* XCRemoteSwiftPackageReference "SwiftUIKit" */;
+			productName = SwiftUIKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D93F5C762A02E828008EF531 /* Project object */;
 }
