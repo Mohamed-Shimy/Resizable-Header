@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import SwiftUIKit
+import SHKit
 
 extension HomeView {
     
@@ -58,7 +58,7 @@ extension HomeView {
                 let halfScaledHeight = (rect.height * 0.3) * 0.5
                 let midY = rect.midY
                 let bottomPadding: CGFloat = 15
-                let resizedoffsetY = (midY - (minHeight - halfScaledHeight - bottomPadding))
+                let resizedOffsetY = (midY - (minHeight - halfScaledHeight - bottomPadding))
                 
                 Image(systemName: "person")
                     .imageScale(.large)
@@ -67,7 +67,7 @@ extension HomeView {
                     .backgroundColor(.orange)
                     .clipShape(Circle())
                     .scaleEffect(profileImageScale, anchor: .leading)
-                    .offset(x: -(rect .minX - 15) * progress, y: -resizedoffsetY * progress)
+                    .offset(x: -(rect .minX - 15) * progress, y: -resizedOffsetY * progress)
             }
             .frame(height * 0.5)
         }

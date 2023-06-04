@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "shkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Mohamed-Shimy/SHKit",
+      "state" : {
+        "revision" : "002e12ef461b5c7223254ad4f05314faac0cf831",
+        "version" : "0.1.0"
+      }
+    }
+  ],
+  "version" : 2
+}

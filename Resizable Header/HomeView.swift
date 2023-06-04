@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import SwiftUIKit
+import SHKit
 
 struct HomeView: View {
         
@@ -18,7 +18,7 @@ struct HomeView: View {
             let safeArea = proxy.safeAreaInsets
             let headerHeight = (size.height * 0.3) + safeArea.top
             
-            IScrollView(.vertical, showsIndicators: false, offset: $offset) {
+            SHScrollView(.vertical, showsIndicators: false, offset: $offset) {
                 VStack(spacing: 0) {
                     HeaderView(height: headerHeight,
                                minHeight: 65 + safeArea.top,

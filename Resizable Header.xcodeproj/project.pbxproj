@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D90584EF2A2D0CEA0092FC58 /* SHKit in Frameworks */ = {isa = PBXBuildFile; productRef = D90584EE2A2D0CEA0092FC58 /* SHKit */; };
 		D93F5C822A02E828008EF531 /* Resizable_HeaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F5C812A02E828008EF531 /* Resizable_HeaderApp.swift */; };
 		D93F5C842A02E828008EF531 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F5C832A02E828008EF531 /* ContentView.swift */; };
 		D93F5C862A02E82A008EF531 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D93F5C852A02E82A008EF531 /* Assets.xcassets */; };
 		D93F5C892A02E82A008EF531 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D93F5C882A02E82A008EF531 /* Preview Assets.xcassets */; };
 		D93F5C902A02E85D008EF531 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F5C8F2A02E85D008EF531 /* HomeView.swift */; };
-		D93F5CC12A06659D008EF531 /* SwiftUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = D93F5CC02A06659D008EF531 /* SwiftUIKit */; };
 		D93F5CC32A06A029008EF531 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F5CC22A06A029008EF531 /* HomeHeaderView.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,7 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D93F5CC12A06659D008EF531 /* SwiftUIKit in Frameworks */,
+				D90584EF2A2D0CEA0092FC58 /* SHKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +92,7 @@
 			);
 			name = "Resizable Header";
 			packageProductDependencies = (
-				D93F5CC02A06659D008EF531 /* SwiftUIKit */,
+				D90584EE2A2D0CEA0092FC58 /* SHKit */,
 			);
 			productName = "Resizable Header";
 			productReference = D93F5C7E2A02E828008EF531 /* Resizable Header.app */;
@@ -123,7 +123,7 @@
 			);
 			mainGroup = D93F5C752A02E828008EF531;
 			packageReferences = (
-				D93F5CBF2A06659D008EF531 /* XCRemoteSwiftPackageReference "SwiftUIKit" */,
+				D90584ED2A2D0CEA0092FC58 /* XCRemoteSwiftPackageReference "SHKit" */,
 			);
 			productRefGroup = D93F5C7F2A02E828008EF531 /* Products */;
 			projectDirPath = "";
@@ -359,21 +359,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		D93F5CBF2A06659D008EF531 /* XCRemoteSwiftPackageReference "SwiftUIKit" */ = {
+		D90584ED2A2D0CEA0092FC58 /* XCRemoteSwiftPackageReference "SHKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Mohamed-Shimy/SwiftUIKit.git";
+			repositoryURL = "https://github.com/Mohamed-Shimy/SHKit";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D93F5CC02A06659D008EF531 /* SwiftUIKit */ = {
+		D90584EE2A2D0CEA0092FC58 /* SHKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D93F5CBF2A06659D008EF531 /* XCRemoteSwiftPackageReference "SwiftUIKit" */;
-			productName = SwiftUIKit;
+			package = D90584ED2A2D0CEA0092FC58 /* XCRemoteSwiftPackageReference "SHKit" */;
+			productName = SHKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
